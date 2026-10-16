@@ -1,180 +1,134 @@
-# Apollo Hospitals – Appointment No-Show and Patient Engagement Analysis
+# Apollo Hospitals — Appointment No-Show Analysis
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4c72b0)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 ## Project Overview
 
-This project focuses on analysing hospital appointment data to understand appointment attendance, no-show patterns, patient engagement, and their potential impact on healthcare operations.
+The Apollo Hospitals Appointment No-Show Analysis project focuses on understanding appointment outcomes and identifying the scale of missed appointments. The analysis uses Python to explore appointment data and visualise important findings.
 
-The project uses Python-based analysis and visualizations to explore appointment behaviour and presents the findings through a published HTML dashboard. The objective is to make the analysis easy to understand and highlight areas where data-driven approaches may support appointment management and resource planning.
+An HTML dashboard presents the project visuals and key information in an accessible format.
 
-## Live Dashboard
+**[View Live Interactive Dashboard](https://bs391095.github.io/apollo-appointment-python/Docs/Apollo_Hospitals_Dark_Dashboard.html)**
 
-**[View Live Apollo Hospitals Dashboard](https://bs391095.github.io/apollo-appointment-python/Docs/Apollo_Hospitals_Dark_Dashboard.html)**
+## Dataset Overview
 
-The dashboard brings together visual analysis of appointment outcomes, no-show patterns, booking lead time, patient and specialty comparisons, and other operational indicators.
+The dataset contains **75,000 appointment records**. The following table summarises the distribution of appointment outcomes.
 
-## Project Objectives
+| Appointment Status | Count | % of Total |
+|---|---:|---:|
+| Completed | 55,275 | 73.7% |
+| No-Show | 11,584 | 15.4% |
+| Cancelled | 5,793 | 7.7% |
+| Scheduled | 2,348 | 3.1% |
+| **Total** | **75,000** | **100%** |
 
-- Analyse appointment attendance and no-show patterns.
-- Explore appointment trends and booking behaviour.
-- Examine no-show patterns across relevant patient and service categories.
-- Investigate the relationship between booking lead time and appointment attendance.
-- Explore patient engagement and reminder-related patterns.
-- Understand the potential operational and financial implications of missed appointments.
-- Communicate findings through visualizations and an accessible dashboard.
+*Note: Percentages are rounded, so the displayed individual percentages add up to approximately 99.9%.*
+
+## Business Objectives
+
+- Analyse appointment outcomes and patient attendance.
+- Understand the number and proportion of no-show appointments.
+- Explore patterns in the appointment data.
+- Present the analysis through charts and a dashboard.
+- Identify areas that may require further investigation to improve patient attendance.
 
 ## Tools and Technologies
 
-- **Python** – Data analysis and processing
-- **Pandas** – Data manipulation and analysis
-- **NumPy** – Numerical operations
-- **Matplotlib and Seaborn** – Data visualization
-- **Jupyter Notebook** – Exploratory analysis
-- **HTML and CSS** – Dashboard presentation
-- **GitHub** – Version control and project repository
-- **GitHub Pages** – Dashboard publishing
+- **Python:** Programming and data analysis
+- **Pandas:** Data manipulation and analysis
+- **NumPy:** Numerical operations
+- **Matplotlib:** Data visualisation
+- **Seaborn:** Statistical visualisation
+- **Jupyter Notebook:** Writing and running the analysis
+- **HTML:** Dashboard presentation
 
 ## Project Workflow
 
-1. **Data Loading:** Load the appointment dataset into the analysis environment.
-2. **Data Inspection:** Review the dataset structure, columns, and data types.
-3. **Data Preparation:** Prepare the data for analysis and check for data-quality issues as required.
-4. **Exploratory Data Analysis:** Explore appointment outcomes, trends, and relevant variables.
-5. **Pattern Analysis:** Compare attendance behaviour across booking characteristics and service categories.
-6. **Visualization:** Present analytical patterns through charts.
-7. **Dashboard Development:** Organize the visualizations into a dashboard for easier exploration.
-8. **Interpretation:** Explain what the observed patterns may mean for appointment management and hospital operations.
+1. **Data Preparation:** Load and prepare the dataset for analysis.
+2. **Exploratory Data Analysis:** Examine appointment outcomes and patterns.
+3. **Visualisation:** Use Matplotlib and Seaborn to create charts.
+4. **Dashboard:** Present the project visuals through an HTML dashboard.
+5. **Interpretation:** Review the results and identify opportunities for further analysis.
 
-## Dashboard Visualizations
+## Appointment Outcome Distribution
 
-The following graphs are included in the repository.
+The following visualisation supports a quick understanding of the appointment outcome distribution.
 
-### Graph 1
+![Appointment Outcome Distribution](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20141823.png)
 
-![Appointment Analysis Graph 1](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20141823.png)
+## Exploratory Data Analysis
 
-### Graph 2
+The project includes visualisations created during the analysis to explore appointment outcomes and related patterns.
 
-![Appointment Analysis Graph 2](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142255.png)
+### Analysis Visualisations
 
-### Graph 3
+**1. Appointment Analysis**
 
-![Appointment Analysis Graph 3](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142317.png)
+![Appointment Analysis](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142255.png)
 
-### Graph 4
+**2. Patient Attendance Patterns**
 
-![Appointment Analysis Graph 4](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142336.png)
+![Patient Attendance Patterns](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142317.png)
 
-### Graph 5
+**3. Appointment Trends**
 
-![Appointment Analysis Graph 5](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142353.png)
+![Appointment Trends](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142336.png)
 
-### Graph 6
+**4. Additional Analysis**
 
-![Appointment Analysis Graph 6](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142415.png)
+![Additional Analysis](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142353.png)
 
-For the complete dashboard experience, visit the [Live Dashboard](https://bs391095.github.io/apollo-appointment-python/Docs/Apollo_Hospitals_Dark_Dashboard.html).
+**5. Dashboard Visualisation**
 
-## Repository Structure
+![Dashboard Visualisation](https://raw.githubusercontent.com/bs391095/apollo-appointment-python/main/Deshboard_Graph/Screenshot%202026-10-16%20142415.png)
 
-```text
-apollo-appointment-python/
-│
-├── Data/
-│   └── Project datasets
-│
-├── Deshboard_Graph/
-│   └── Graph screenshots
-│
-├── Docs/
-│   └── Apollo_Hospitals_Dark_Dashboard.html
-│
-├── Notebook/
-│   └── Project analysis notebook
-│
-└── README.md
-```
+## Key Findings
 
-## How to Run This Project
+- **75,000** appointment records were analysed.
+- **55,275 appointments (73.7%)** were completed.
+- **11,584 appointments (15.4%)** were marked as no-shows.
+- **5,793 appointments (7.7%)** were cancelled.
+- **2,348 appointments (3.1%)** were scheduled.
 
-### 1. Clone the Repository
+These results provide an overview of appointment outcomes and highlight no-shows as an important area for further analysis.
 
-Open a terminal and run:
+## Overall Interpretation
 
-```bash
-git clone https://github.com/bs391095/apollo-appointment-python.git
-```
+The analysis shows that approximately **15.4% of appointments, representing 11,584 records, were marked as no-shows**. Although most appointments were completed, missed appointments remain an important operational concern for healthcare providers. Further analysis of factors such as appointment lead time, patient reminders and other available appointment characteristics could help identify patterns associated with missed visits. These insights can support better-informed decisions about patient engagement and hospital resource utilisation.
 
-### 2. Navigate to the Project Folder
+## Project Structure
 
-```bash
-cd apollo-appointment-python
-```
+- `Data/` — Project datasets
+- `Notebook/` — Jupyter Notebook analysis
+- `Deshboard_Graph/` — Analysis charts and screenshots
+- `Docs/` — HTML dashboard
 
-### 3. Create a Virtual Environment (Optional)
+## How to Run
 
-On Windows:
+1. Clone or download this repository.
+2. Open the notebook in the `Notebook/` folder using Jupyter Notebook.
+3. Ensure the dataset and required Python libraries are available.
+4. Open the HTML dashboard using the live link above.
 
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
+## Project Deliverable
 
-### 4. Install the Required Libraries
+**[Open the Live Apollo Hospitals Dashboard](https://bs391095.github.io/apollo-appointment-python/Docs/Apollo_Hospitals_Dark_Dashboard.html)**
 
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
+## Skills Demonstrated
 
-If the notebook imports additional libraries, install those packages as well.
+Python, Pandas, NumPy, data cleaning and preparation, exploratory data analysis, Matplotlib, Seaborn, data visualisation, dashboard presentation, and analytical thinking.
 
-### 5. Open Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open the `Notebook` folder, select the relevant `.ipynb` file, and execute the cells in order.
-
-Make sure the dataset paths used in the notebook match the actual files inside the `Data` folder.
-
-### 6. Open the Dashboard
-
-The published dashboard can be viewed directly in a web browser without installing Python:
-
-**[Open Live Dashboard](https://bs391095.github.io/apollo-appointment-python/Docs/Apollo_Hospitals_Dark_Dashboard.html)**
+---
 
 ## Author
 
 **Bhoopendra Singh**
 
-## Project Interpretations
+Aspiring Data Analyst
 
-### 1. Appointment Attendance and No-Shows
-
-Comparing attended and missed appointments helps evaluate appointment attendance patterns. These patterns can help identify where appointment confirmation and follow-up processes may need further investigation.
-
-### 2. Booking Lead Time
-
-The relationship between booking lead time and no-show behaviour can help explore whether appointments scheduled further in advance have different attendance patterns. If supported by the analysis, this may inform the timing of appointment reminders.
-
-### 3. Specialty-Level Patterns
-
-Comparing appointment outcomes across medical specialties may reveal differences in attendance behaviour. These comparisons should consider both the number of appointments and the no-show rate to avoid misleading conclusions from smaller groups.
-
-### 4. Patient Engagement
-
-Reminder-related and previous appointment behaviour can help explore patient engagement patterns. Such relationships should be interpreted carefully, because the presence of a reminder or a patient's past behaviour does not guarantee a particular future outcome.
-
-### 5. Operational Implications
-
-Missed appointments can affect how effectively scheduled consultation capacity is used. Understanding attendance patterns may help hospital teams investigate scheduling gaps and improve appointment follow-up processes.
-
-### 6. Financial Implications
-
-The estimated financial impact of missed appointments can help illustrate why attendance matters to healthcare operations. However, estimated revenue exposure should not automatically be treated as confirmed revenue loss; the calculation depends on the project's assumptions and underlying data.
-
-### Overall Interpretation
-
-This project demonstrates how appointment data can be explored through Python, visualized through charts, and presented through a dashboard. The analysis can help identify attendance patterns and areas for further investigation in patient engagement, scheduling, and operational planning.
-
-The findings should be interpreted as analytical observations rather than proof of cause and effect. Any operational recommendations should be validated against the underlying data and hospital requirements.
+[GitHub Profile](https://github.com/bs391095)
